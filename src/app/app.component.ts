@@ -18,7 +18,7 @@ export class AppComponent {
 
   open() {
     this.dialogRef = this.dialog.open(ModalContentComponent, { hasBackdrop: true });
-    this.dialogRef.componentInstance.closeModal.subscribe((evt) => console.log(evt));
+    this.dialogRef.componentInstance.closeModal.subscribe((evt) => this.dialogRef.close());
     this.dialogRef.componentInstance.saveData.subscribe((evt) => console.log(evt));
   }
 

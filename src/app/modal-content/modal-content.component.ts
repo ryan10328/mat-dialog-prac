@@ -18,12 +18,10 @@ export class ModalContentComponent implements OnInit {
   }
 
   close() {
-    console.log('close');
     this.closeModal.emit('close');
   }
 
   save() {
-    console.log('save');
     this.saveData.emit('save');
   }
 
