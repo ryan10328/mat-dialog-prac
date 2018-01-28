@@ -1,15 +1,20 @@
-<div>
-  <div>
-    <h1>Modal Header</h1>
-    <button (click)="close()">Close</button>
+<form #frm="">
+  <div class="imgcontainer">
+    <span class="close" style="width:auto;" (click)="close()">&times;</span>
   </div>
-  <hr>
-  <div>
-    Hello, Ryan
+  <div class="container">
+    <label>
+      <b>Username</b>
+    </label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label>
+      <b>Password</b>
+    </label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
   </div>
-  <hr>
-  <div>
-    <button (click)="save()">Save</button>
-    <button (click)="close()">Close</button>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="savebtn" (click)="save()">Save</button>
+    <button type="button" class="cancelbtn" (click)="close()">Cancel</button>
   </div>
-</div>
+</form>
